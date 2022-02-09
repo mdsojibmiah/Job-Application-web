@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #c9ffbf, #ffafbd);
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.apply-box{
+    max-width: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.apply-box span{
+    color: #4BC0C8;
+}
+.form-container {
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 20px;
+  }
+.form-control {
+    display: flex;
+    flex-direction: column;
+  }
+label{
+      margin-bottom: 5px;
+      font-size: 15px;
+  }
+input, select, textarea{
+       padding: 10px 8px;
+       border-radius: 10px;     
+}
+input, select, textarea:focus{
+    outline-color: #d9a7c7;
+}
+::placeholder{
+    text-align: center;
+    opacity: 0.5;
+}
+.textarea-control textarea{
+    width: 100%;
+}
+.textarea-control{
+    grid-column: 1 / span 2;
+}
+.button-container{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+button{
+    padding: 6px 8px;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+button:hover{
+    background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+}
