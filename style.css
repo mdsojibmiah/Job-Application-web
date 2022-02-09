@@ -72,3 +72,12 @@ button{
 button:hover{
     background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
 }
+@media (max-width: 460px) {
+    .apply-box{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .textarea-control {
+      grid-column: 1 / span 1;
+    }
+  }
